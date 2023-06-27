@@ -1,3 +1,7 @@
-# csgo-fade-calculator-py
+# CS:GO Fade Calculator Python
 
-Python port of: https://github.com/chescos/csgo-fade-percentage-calculator
+Attempted Python port of [@chescos](https://github.com/chescos) original
+[csgo-fade-percentage-calculator](https://github.com/chescos/csgo-fade-percentage-calculator).  
+Check out his repository for more information.
+
+If you notice any errors please feel free to open an issue or do a pull request.
