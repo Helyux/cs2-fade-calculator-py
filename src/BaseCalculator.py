@@ -1,6 +1,6 @@
 __author__ = "Lukas Mahler"
 __version__ = "0.0.0"
-__date__ = "26.06.2023"
+__date__ = "28.06.2023"
 __email__ = "m@hler.eu"
 __status__ = "Development"
 
@@ -9,6 +9,7 @@ from src.RandomNumberGenerator import RandomNumberGenerator
 
 
 class FadePercentage:
+
     def __init__(self, seed, percentage, ranking):
         self.seed = seed
         self.percentage = percentage
@@ -16,12 +17,14 @@ class FadePercentage:
 
 
 class WeaponFadePercentage:
+
     def __init__(self, weapon, percentages):
         self.weapon = weapon
         self.percentages = percentages
 
 
 class BaseCalculator:
+
     def __init__(self):
         self.weapons = []
         self.reversed_weapons = []
@@ -94,9 +97,14 @@ class BaseCalculator:
         sorted_percentage_results = sorted(percentage_results)
 
         return [
-            FadePercentage(i, self.min_percentage + (percentage_result * (100 - self.min_percentage)),
-                           min(sorted_percentage_results.index(percentage_result) + 1,
-                               len(sorted_percentage_results) - sorted_percentage_results.index(percentage_result)))
+            FadePercentage(
+                i,
+                self.min_percentage + (percentage_result * (100 - self.min_percentage)),
+                min(
+                    sorted_percentage_results.index(percentage_result) + 1,
+                    len(sorted_percentage_results) - sorted_percentage_results.index(percentage_result)
+                )
+            )
             for i, percentage_result in enumerate(percentage_results)
         ]
 
