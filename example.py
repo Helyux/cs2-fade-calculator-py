@@ -1,9 +1,8 @@
 __author__ = "Lukas Mahler"
-__version__ = "0.0.0"
-__date__ = "26.06.2023"
+__version__ = "1.0.0"
+__date__ = "12.07.2023"
 __email__ = "m@hler.eu"
-__status__ = "Development"
-
+__status__ = "Production"
 
 from src.FadeCalculator import FadeCalculator
 from src.AmberFadeCalculator import AmberFadeCalculator
