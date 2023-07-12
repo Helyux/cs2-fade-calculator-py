@@ -14,7 +14,7 @@ def main():
     Showcasing example usage
     """
 
-    # Create an instances of the calculators
+    # Create instances of the calculators
     fade_calc = FadeCalculator()
     amber_calc = AmberFadeCalculator()
     acid_calc = AcidFadeCalculator()
