@@ -9,7 +9,7 @@
 [![Xing][xing-shield]][xing-url]
 </div>
 
-# CS:GO Fade Calculator Python
+# CS2 Fade Calculator Python
 
 Python port of [@chescos](https://github.com/chescos) original
 [csgo-fade-percentage-calculator](https://github.com/chescos/csgo-fade-percentage-calculator).  
