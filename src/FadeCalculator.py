@@ -1,6 +1,6 @@
 __author__ = "Lukas Mahler"
-__version__ = "1.0.0"
-__date__ = "12.07.2023"
+__version__ = "1.0.1"
+__date__ = "17.02.2024"
 __email__ = "m@hler.eu"
 __status__ = "Production"
 
@@ -25,6 +25,7 @@ class FadeCalculator(BaseCalculator):
             'Gut Knife',
             'Huntsman Knife',
             'Karambit',
+            'Kukri Knife',
             'M9 Bayonet',
             'MAC-10',
             'MP7',
