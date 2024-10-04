@@ -1,6 +1,6 @@
 __author__ = "Lukas Mahler"
-__version__ = "1.0.0"
-__date__ = "12.07.2023"
+__version__ = "1.1.5"
+__date__ = "04.10.2024"
 __email__ = "m@hler.eu"
 __status__ = "Production"
 
@@ -70,10 +70,15 @@ class BaseCalculator:
                 config['pattern_rotate_start'], config['pattern_rotate_end']
             )
 
-            if config['pattern_offset_x_start'] != config['pattern_offset_x_end']:
+            uses_rotation = config['pattern_rotate_start'] != config['pattern_rotate_end']
+            uses_x_offset = config['pattern_offset_x_start'] != config['pattern_offset_x_end']
+
+            if uses_rotation and uses_x_offset:
                 raw_result = rotation * x_offset
-            else:
+            elif uses_rotation:
                 raw_result = rotation
+            else:
+                raw_result = x_offset
 
             raw_results.append(abs(raw_result))
 

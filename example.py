@@ -1,6 +1,6 @@
 __author__ = "Lukas Mahler"
-__version__ = "1.0.0"
-__date__ = "12.07.2023"
+__version__ = "1.1.5"
+__date__ = "04.10.2024"
 __email__ = "m@hler.eu"
 __status__ = "Production"
 
@@ -11,7 +11,7 @@ from src.AcidFadeCalculator import AcidFadeCalculator
 
 def main():
     """
-    Showcasing example usage
+    Showcase some example usage
     """
 
     # Create instances of the calculators
@@ -25,7 +25,7 @@ def main():
     print("Supported weapons in acid fade calculator: ", acid_calc.get_supported_weapons())
 
     # Get the fade percentages for a specific weapon and seed
-    fade = fade_calc.get_fade_percentage(weapon := "AWP", 42)
+    fade = fade_calc.get_fade_percentage(weapon := "M4A1-S", 42)
     print(f"Base fade percentage for  [{weapon:>10s}] "
           f"with seed: {fade.seed:4d} is {fade.percentage:6.2f}% / ranked: {fade.ranking:4d}")
 
