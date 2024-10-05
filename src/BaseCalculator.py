@@ -1,6 +1,6 @@
 __author__ = "Lukas Mahler"
-__version__ = "1.1.5"
-__date__ = "04.10.2024"
+__version__ = "1.1.6"
+__date__ = "06.10.2024"
 __email__ = "m@hler.eu"
 __status__ = "Production"
 
@@ -80,16 +80,16 @@ class BaseCalculator:
             else:
                 raw_result = x_offset
 
-            raw_results.append(abs(raw_result))
+            raw_results.append(raw_result)
 
         is_reversed = weapon in self.reversed_weapons
 
         if is_reversed:
-            best_result = max(raw_results)
-            worst_result = min(raw_results)
-        else:
             best_result = min(raw_results)
             worst_result = max(raw_results)
+        else:
+            best_result = max(raw_results)
+            worst_result = min(raw_results)
 
         result_range = worst_result - best_result
 

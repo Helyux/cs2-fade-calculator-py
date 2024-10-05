@@ -1,6 +1,6 @@
 __author__ = "Lukas Mahler"
-__version__ = "1.0.0"
-__date__ = "12.07.2023"
+__version__ = "1.1.6"
+__date__ = "06.10.2024"
 __email__ = "m@hler.eu"
 __status__ = "Production"
 
@@ -17,7 +17,9 @@ class AcidFadeCalculator(BaseCalculator):
             'SSG 08',
         ]
 
-        self.reversed_weapons = []
+        self.reversed_weapons = [
+            'SSG 08',
+        ]
 
         self.trade_up_weapons = [
             'SSG 08',

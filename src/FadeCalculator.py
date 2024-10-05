@@ -1,6 +1,6 @@
 __author__ = "Lukas Mahler"
-__version__ = "1.1.5"
-__date__ = "04.10.2024"
+__version__ = "1.1.6"
+__date__ = "06.10.2024"
 __email__ = "m@hler.eu"
 __status__ = "Production"
 
@@ -46,6 +46,7 @@ class FadeCalculator(BaseCalculator):
         self.reversed_weapons = [
             'AWP',
             'Karambit',
+            'MP7',
             'Talon Knife'
         ]
 
